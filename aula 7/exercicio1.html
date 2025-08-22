@@ -5,58 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body
-        {
-
-        }
-        h1
-        {
-         margin:40px ;
-         background-color: palevioletred;
-         color:white;
-         padding: 30px;
-         text-align: center;
-        }
+       
         .titulo
         {
             color:palevioletred;
             text-align: center;
-            text-decoration: ;
+            background-color: rgb(256,256,256);
+            font-size: 40px;
+            padding: 30px;
+            margin: 40px;
         }
         
-        .caixa
+        .p
         {
-            border: 1px solid;
+            border: 2px solid black;
             margin:40px;
-            font-size: 20px;
+        }
+
+        .interacao
+        {
+         background-color: rgba(57,29,184, 0.642);
+         margin: 40px;
+         padding: 10px;
+        }
+        
+        .lista
+        {
+        
+            border: 1px solid black;
+            padding: 5px;
+            margin: 40px;
+        }
+        table, tr, th, td
+        {
+            border: 1px solid black;
+            border-collapse:collapse ;
+            margin: 40px;
+        }
+        th
+        {
+            background-color: rgb(34, 71,71);
+        }
+        .etec
+        {
+            color: gray;
+            text-align: center;
+            margin: 40px;
+        }
+        .h1
+        {
+            font-size: 16px;
+            color: white;
+            margin: 40px;
         }
 
         h2
         {
-       margin: 40px;
-        }
-        
-        nav a
-        {
-        color: palevioletred;
-        text-decoration: none;
-        margin: 0 10px;
-    
+            margin: 40px;
         }
 
     </style>
 </head>
 <body>
     <h1> Página de exercício de CSS</h1>
-    <nav> 
-        <a href="#"> Inicio</a>
-        <a href="#"> Sobre </a>
-        <a href="#"> Contato</a>
-    </nav>
+    <p class="titulo"> Página de Exercícios de CSS 
+    <br> <a href="#"class=h1>Início </a>
+    <a href="#" class="h1"> Sobre</a>
+    <a href="#" class="h1">Contato</a>
+</p>
 
-    <h3 span class="negrito"> 1. Parágrafos e cores</h3>
-    <p class="caixa"> Este é um parágrafo simples para aplicar cor, margem, padding e outras propriedades do CSS.</p>
-    <p class="caixa"> Você pode aplicar diferentes fontes, tamanhos, cores e diferewntes espaçamentos aqui. </p>
+    
+        <h2> 1. Parágrafos </h2>
+        <p class="p">Este é o parágrafo simples para aplicar cor, margem, padding e outras propriedades de CSS </p>
+        <p class="p"> Você pode aplicar diferentes fontes, tamanhos, cores e espaçamentos aqui </p>
+
+        <h2> 2. Botões de interação </h2>
+        <ul class="lista">
+        <li> Html</li>
+        <li> CSS</li>
+        <li> Javascript</li>
+    </ul>
+
+        <h2> 3. Lista de itens</h2>
+        <ul class="lista"> 
+        <li> html</li>
+        <li> CSS</li>
+        <li> Javascript</li>
+    </ul>
+    <h2> 4. Tabela de Estilo</h2>
+    <table>
+        <tr>
+            <th> Nome</th>
+            <th> Idade</th> 
+            <th> Cidade</th>
+        </tr>
+        <tr>
+            <td> João</td>
+            <td> 25</td>
+            <td> São Paulo</td>
+        </tr>
+            <tr>
+                <td> Ana </td> 
+                <td> 38</td>
+         <td> Rio de Janeiro</td>
+        </tr>
+        <table>
+            <p class="etec"> Etec Fancisco Gracia</p>
+        </table>
+    </table>
 
 </body>
 </html>
