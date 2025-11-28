@@ -5,99 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NSA Online</title>
     <style>
+        
+        
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: white;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9e9e9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+       
+        .container {
             text-align: center;
         }
 
-        h1 {
-            font-size: 60px;
-            margin-top: 40px;
-            font-family: "Times New Roman", serif;
-        }
-
-        h1 span {
-            display: block;
-            font-size: 40px;
-            margin-top: -10px;
-        }
-
         .login-box {
-            margin-top: 40px;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 6px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            width: 420px;
+            margin: 0 auto;
         }
 
-        label {
-            font-size: 16px;
-            margin-right: 5px;
+       
+        .logo {
+            font-size: 48px;
+            font-weight: 900;
+            color: #222;
+            margin: 0;
+            letter-spacing: 2px;
         }
 
-        input[type="text"] {
-            width: 150px;
-            padding: 5px;
-            margin: 5px;
+        .logo span {
+            color: #1a2c8d;
+            display: block;
+            font-size: 38px;
+            font-weight: 700;
         }
 
-        .blue-bar {
-            width: 100%;
-            height: 60px;
-            background-color: blue;
-            margin-top: 30px;
-        }
-
+        /* Ícones */
         .icons {
             display: flex;
             justify-content: center;
-            align-items: center;
             margin-top: 40px;
-            gap: 80px;
+            gap: 60px;
         }
 
-        .icons img {
+        .icon img {
             width: 60px;
             height: auto;
-            cursor: pointer;
         }
 
-        footer {
-            background-color: black;
-            color: white;
-            padding: 10px;
+        .icon p {
             font-size: 14px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            color: #555;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
+      
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-size: 14px;
+            padding: 10px 0;
+            margin-top: 30px;
+            border-radius: 0 0 6px 6px;
         }
     </style>
 </head>
 <body>
-    <h1>
-        NSA <span>ONLINE</span>
-    </h1>
+    <div class="container">
+        <div class="login-box">
+             <img src="nsaonline.png" width="120px">
 
-    <div class="login-box">
-        <label>Entrar como</label>
-        <input type="text" name="usuario">
-        <label>Cod. Etec</label>
-        <input type="text" name="codigo">
-    </div>
-
-    <div class="blue-bar"></div>
-
-    <div class="icons">
-        <div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg" alt="Android logo">
-            <p>ANDROID</p>
+            <div class="icons">
+                <div class="icon android">
+                    <img src="download.png" alt="Android">
+                    <p>ANDROID</p>
+                </div>
+                <div class="icon ios">
+                    <img src="ios.png" alt="iOS">
+                    <p>iOS</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="apple-ios.png" alt="iOS logo">
-            <p>iOS</p>
-        </div>
-    </div>
 
-    <footer>
-        Desenvolvido por lívia de paula
-    </footer>
+        <footer>
+            © Sistema NSA - Desde 2008
+        </footer>
+    </div>
 </body>
 </html>
